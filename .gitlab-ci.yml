@@ -1,6 +1,4 @@
 image: busybox
-
-
 pages:
   stage: deploy
   environment: production
