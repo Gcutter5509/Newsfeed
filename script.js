@@ -18,7 +18,7 @@ const Navigation = ({ onNavClick, currentCategory, className = '' }) => {
 return ( 
 <nav className={`grid navigation ${className}`}> 
 <a className="navigation__logo" data-href="index" href="#"> 
-<img className="navigation__logo-image" src="./images/logo.svg" alt="Логотип" /> 
+<img className="navigation__logo-image" src="Лого.png" alt="Логотип" /> 
 </a> 
 <ul className="navigation__list"> 
 {['index', 'fashion', 'technologies', 'sport', 'karpov'].map((item) => { 
@@ -27,6 +27,31 @@ return (
 <a 
 onClick={onNavClick} 
 className={`navigation__link ${currentCategory === item ? 'navigation__link--active' : '' }`} 
+data-href={item} 
+href="#" 
+> 
+{categoryNames[item]} 
+</a> 
+</li> 
+) 
+})} 
+</ul> 
+</nav> 
+) 
+} 
+const Navigation2 = ({ onNavClick, currentCategory, className = '' }) => { 
+return ( 
+<nav className={`grid navigation ${className}`}> 
+<a className="navigation__logo" data-href="index" href="#"> 
+<img className="navigation__logo-image" src="Лого.png" alt="Логотип" /> 
+</a> 
+<ul className="navigation__list"> 
+{['index', 'fashion', 'technologies', 'sport', 'karpov'].map((item) => { 
+return ( 
+<li className="navigation__item" key={item}> 
+<a 
+onClick={onNavClick} 
+className={`navigation__link2 ${currentCategory === item ? 'navigation__link2--active' : '' }`} 
 data-href={item} 
 href="#" 
 > 
@@ -146,7 +171,7 @@ date={item.date}
 
 <footer className="footer"> 
 <div className="container"> 
-<Navigation onNavClick={onNavClick} currentCategory={category} className="footer__navigation" /> 
+<Navigation2 onNavClick={onNavClick} currentCategory={category} className="footer__navigation" /> 
 <div className="footer__bottom"> 
 <p className="footer__text">Сделано на Frontend курсе в <a className="footer__link" href="https://karpov.courses/frontend" target="_blank">Karpov.Courses</a></p> 
 <p className="footer__text footer__text--gray">© 2021</p> 
