@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const data = {
  "sources":[
    {
@@ -274,7 +275,6 @@ const data = {
    }
  ]
 }
-
 
 const escapeString = (string) => { 
 const tagsToReplace = { 
