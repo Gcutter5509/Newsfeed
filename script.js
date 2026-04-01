@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const data = {
  "sources":[
    {
