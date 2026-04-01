@@ -64,18 +64,18 @@ color: var(--color-accent);
 } 
 
 
-.menu-el{
+.navigation__item{
     font-family: Rubik, sans-serif ;
     font-weight: 900;
     font-size: 24px;
     text-align: center;
     margin-right:30px;
 }
-.nav__link{
+.navigation__link{
     text-decoration: none;
     color: var(--color-primary);
 }
-.nav__link:hover{
+.navigation__link:hover .navigation__link2:hover{
     color:var(--color-accent);
 }
 .container{
@@ -85,7 +85,7 @@ color: var(--color-accent);
 display: block; 
 } 
 .navigation__logo-image { 
-width: 5%; 
+width: 70%; 
 } 
 
 .articles{
@@ -190,11 +190,11 @@ color: var(--color-accent);
     width:100%;
     background-color: var(--color-primary);
 }
-.nav__link2{
+.navigation__link2{
     text-decoration: none;
     color: white;
 }
-.nav__link2:hover{
+.navigation__link2:hover{
     color:var(--color-accent);
 }
 .footer__column{
