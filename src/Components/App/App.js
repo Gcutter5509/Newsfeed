@@ -1,3 +1,9 @@
+import { categoryIds } from '../../utils.js'; 
+import { Navigation } from '../Navigation/Navigation.js'; 
+import { Articles } from '../Articles/Articles.js'; 
+import React from 'react'; 
+import './App.css'; 
+
 const data = {
  "sources":[
    {
@@ -331,3 +337,4 @@ const template = document.createElement('template');
 template.innerHTML = createSmallNewsItem(item); 
 smallNewsContainer.appendChild(template.content); 
 })
+
